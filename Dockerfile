@@ -9,4 +9,4 @@ RUN mkdir bin && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldfla
 
 FROM alpine AS production
 COPY --from=builder /app/bin/* .
-CMD ["./httpserver", ":8080"]
+CMD ["./httpserver", ":80"]
