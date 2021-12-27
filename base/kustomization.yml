@@ -5,5 +5,10 @@ resources:
   - deployment.yaml
   - service.yaml
   - configmap.yaml
+  - virtualservice.yaml
   - secret.yaml
-  - ingress.yaml
+  - gateway.yaml
+images:
+  - name: yhaing/httpserver
+    newTag: 2.0
+
